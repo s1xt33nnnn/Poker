@@ -8,6 +8,9 @@ public class Carta {
         this.palo = palo;
     }
 
+    public String getPalo() {
+        return palo;
+    }
 
     @Override
     public String toString() {
