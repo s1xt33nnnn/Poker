@@ -36,9 +36,10 @@ public class Mazo {
     @Override
     public String toString() {
         String s = "";
-        for (int i = 0; i < cartas.length; i++) {
-            if (Carta.palos == "♠"){
-                s +=
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < numCartas; j++) {
+                if (cartas[j].getPalo() == Carta.palos[i]);
+                s += cartas[j];
             }
         }
         return s;
