@@ -15,7 +15,7 @@ public class Carta {
     @Override
     public String toString() {
         String s = "";
-        boolean first = false
+        boolean first = false;
         if (numero == 11) {
             return ("J" + " de " + palo+", ");
             first = true;
