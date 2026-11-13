@@ -15,16 +15,18 @@ public class Carta {
     @Override
     public String toString() {
         String s = "";
+        boolean first = false
         if (numero == 11) {
-            return ("J" + " de " + palo);
+            return ("J" + " de " + palo+", ");
+            first = true;
         } else if (numero == 12) {
-            return ("Q" + " de " + palo);
+            return ("Q" + " de " + palo+", ");
         } else if (numero == 13) {
-            return ("K" + " de " + palo);
+            return ("K" + " de " + palo+", ");
         } else if (numero == 1) {
-            return ("A" + " de " + palo);
+            return ("A" + " de " + palo+", ");
         } else {
-            return numero + " de " + palo;
+            return numero + " de " + palo + ", ";
         }
     }
 }

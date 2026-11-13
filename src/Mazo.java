@@ -6,9 +6,9 @@ public class Mazo {
         numCartas = 52 * numBarajas;
         cartas = new Carta[numCartas];
         int counter = 0;
-        for (int i = 1; i < numBarajas; i++) {
+        for (int i = 1; i <= numBarajas; i++) {
             for (int j = 0; j < Carta.palos.length; j++) {
-                for (int k = 1; k < 13; k++) {
+                for (int k = 1; k <= 13; k++) {
                     cartas[counter] = new Carta(k,Carta.palos[j]);
                     counter++;
                 }
