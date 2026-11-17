@@ -8,5 +8,7 @@ public class Main {
         mazo.barajar();
         System.out.println("Mazo barajado: " + mazo);
         System.out.println("Esta carta es la extraída: "+mazo.extraerCarta());
+        Jugador jugador1 = new Jugador("Paco");
+        System.out.println(jugador1);
     }
 }
