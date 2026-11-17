@@ -12,6 +12,10 @@ public class Carta {
         return palo;
     }
 
+    public int getNumero() {
+        return numero;
+    }
+
     @Override
     public String toString() {
         String s = "";
@@ -27,4 +31,6 @@ public class Carta {
             return numero + " de " + palo;
         }
     }
+
+
 }
