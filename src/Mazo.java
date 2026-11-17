@@ -16,7 +16,7 @@ public class Mazo {
         }
     }
 
-    public void barajar(int barajados){
+    public void barajar(){
         for (int i = 0; i < cartas.length * 5; i++) {
             int n1 = (int) (Math.random() * cartas.length);
             int n2 = (int) (Math.random() * cartas.length);
@@ -37,9 +37,15 @@ public class Mazo {
     public String toString() {
         String s = "";
         for (int i = 0; i < 3; i++) {
+            boolean first = true;
             for (int j = 0; j < numCartas; j++) {
                 if (cartas[j].getPalo() == Carta.palos[i]){
-                s += cartas[j];
+                    if (first){
+                        s += cartas[j];
+                        first = false;
+                    }else {
+                        s += ", " + cartas[j];
+                    }
                 }
             }
         }
